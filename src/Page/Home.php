@@ -2,7 +2,6 @@
 
 namespace App\Page;
 
-use App\Matchable;
 
 class Home extends AbstractPage
 {
