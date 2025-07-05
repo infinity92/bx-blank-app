@@ -5,6 +5,10 @@ namespace App\Page;
 
 class Home extends AbstractPage
 {
+    public function getTitle(): string
+    {
+        return 'Home';
+    }
     public function render(): string
     {
         $events = \CRest::call('event.get');

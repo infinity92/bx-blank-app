@@ -24,6 +24,6 @@ abstract class AbstractPage implements Matchable, Renderable, HasTitle
 
     public function getTitle(): string
     {
-        return '';
+        return ucfirst($this->getId());
     }
 }
