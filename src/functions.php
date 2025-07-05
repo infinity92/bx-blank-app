@@ -13,9 +13,6 @@ $curl = curl_init();
 	));
 
     $result = curl_exec($curl);
-//	debug($result);
-//	$httpStatus = curl_getinfo($curl);
-//	debug($httpStatus);
     curl_close($curl);
 
     return $result;
