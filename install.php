@@ -1,0 +1,35 @@
+<?php
+
+use crest\CRest;
+
+include_once __DIR__ . '/src/include/bootstrap.php';
+
+$result = CRest::installApp();
+CRest::call(
+    'event.bind',
+    [
+        'event' => 'ONSUBSCRIPTIONRENEW',
+        'handler' => 'http://app.local/index.php?page=event_handler',
+        'auth_type' => 1
+    ]
+);
+
+if($result['rest_only'] === false):?>
+	<head>
+		<script src="//api.bitrix24.com/api/v1/"></script>
+		<?php if($result['install'] == true):?>
+			<script>
+				BX24.init(function(){
+					BX24.installFinish();
+				});
+			</script>
+		<?php endif;?>
+	</head>
+	<body>
+		<?php if($result['install'] == true):?>
+			installation has been finished
+		<?php else:?>
+			installation error
+		<?php endif;?>
+	</body>
+<?php endif;

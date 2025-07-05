@@ -1,0 +1,206 @@
+.container-flex { display: flex; gap: 40px; margin-top: 10px;}
+.list-block { flex: 1; }
+.list-title { font-size: 1.2em; margin-bottom: 10px; }
+.item-card {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #fafbfc;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    transition: box-shadow 0.2s;
+}
+.item-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.item-remove {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    text-decoration: none;
+    color: #c00;
+    font-weight: bold;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+.item-remove:hover { color: #900; }
+.item-label { font-weight: bold; color: #333; }
+.item-value { color: #222; }
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.placement-form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 24px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #fafbfc;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background: #4caf50;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #388e3c;
+}
+
+.alert {
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 18px auto;
+    max-width: 420px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.alert-error {
+    background: #ffeaea;
+    color: #b71c1c;
+    border: 1px solid #f44336;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #256029;
+    border: 1px solid #4caf50;
+}
+
+.item-add {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #2fc6f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+.item-add:hover {
+    background: #1eaedb;
+}
+
+/* Верхнее меню */
+.menu {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    align-items: center;
+}
+
+.menu__item {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu__item:hover,
+.menu__item:focus {
+    background: #f0f4fa;
+    color: #1976d2;
+}
+
+/* 404 */
+.not-found {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 16px;
+    margin: 5vh auto;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+    padding: 40px 24px;
+}
+.not-found h1 {
+    font-size: 8rem;
+    color: #e74c3c;
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 4px 12px #f8caca;
+}
+.not-found p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2em;
+}
+.not-found a {
+    display: inline-block;
+    padding: 0.75em 2em;
+    background: #3498db;
+    color: #fff;
+    border-radius: 2em;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.not-found a:hover {
+    background: #217dbb;
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.25);
+}
+
+.menu__item--active {
+    background: #2fc6f6;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}

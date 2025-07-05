@@ -1,0 +1,79 @@
+Call to a member function get() on null
+syntax error, unexpected token "}", expecting ";"
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+26.06.2025 13:38:42 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+26.06.2025 13:38:52 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+26.06.2025 13:43:07 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+26.06.2025 13:44:03 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+26.06.2025 13:45:13 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+26.06.2025 13:46:38 
+Class "App\Page\CRest" not found
+#0 /var/www/public_html/app.local/src/PageContent.php(42): App\Page\Home->render()
+#1 /var/www/public_html/app.local/src/SimplePage.php(39): App\PageContent->render()
+#2 /var/www/public_html/app.local/src/Application.php(29): App\SimplePage->render()
+#3 /var/www/public_html/app.local/index.php(5): App\Application->render()
+#4 {main}
+
+02.07.2025 12:47:01 
+Cannot instantiate interface App\Matchable
+#0 {main}
+
+02.07.2025 13:30:38 
+App\PageFactory::create(): Return value must be of type App\Page\AbstractPage, none returned
+#0 /var/www/public_html/app.local/src/Application.php(25): App\PageFactory->create(Object(App\Code))
+#1 /var/www/public_html/app.local/index.php(4): App\Application->__construct(Object(App\Request))
+#2 {main}
+
+02.07.2025 13:39:18 
+Too few arguments to function App\PageFactory::__construct(), 1 passed in /var/www/public_html/app.local/src/Application.php on line 55 and exactly 2 expected
+#0 /var/www/public_html/app.local/src/Application.php(55): App\PageFactory->__construct(Array)
+#1 /var/www/public_html/app.local/src/Application.php(23): App\Application->pageFactory()
+#2 /var/www/public_html/app.local/index.php(4): App\Application->__construct(Object(App\Request))
+#3 {main}
+
