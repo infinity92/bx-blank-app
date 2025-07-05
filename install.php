@@ -5,14 +5,6 @@ use crest\CRest;
 include_once __DIR__ . '/src/include/bootstrap.php';
 
 $result = CRest::installApp();
-CRest::call(
-    'event.bind',
-    [
-        'event' => 'ONSUBSCRIPTIONRENEW',
-        'handler' => 'http://app.local/index.php?page=event_handler',
-        'auth_type' => 1
-    ]
-);
 
 if($result['rest_only'] === false):?>
 	<head>
