@@ -2,17 +2,23 @@
 
 namespace App;
 
+use Dotenv\Dotenv;
+
 class Request
 {
     private array $get;
     private array $post;
     private array $server;
+    private array $env;
 
     public function __construct()
     {
         $this->get = $_GET ?? [];
         $this->post = $_POST ?? [];
         $this->server = $_SERVER ?? [];
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+        $dotenv->load();
+        $this->env = $_ENV ?? [];
     }
 
     public function get(string $key, $default = null)
@@ -45,6 +51,11 @@ class Request
         return $this->server;
     }
 
+    public function allEnv(): array
+    {
+        return $this->env;
+    }
+
     public function method(): string
     {
         return $this->server['REQUEST_METHOD'] ?? 'GET';
@@ -58,5 +69,10 @@ class Request
     public function isGetMethod(): bool
     {
         return $this->method() === 'GET';
+    }
+
+    public function env(string $key, $default = null)
+    {
+        return $this->env[$key] ?? $default;
     }
 }
